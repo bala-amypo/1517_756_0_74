@@ -2,5 +2,10 @@
 public class LocationController {
     @Autowired
     LocationService locationservice;
-    @PostMa
+    @PostMapping("/addlocation")
+    public LocationEntity add (@RequestBody LocationEntity le) {
+        return locationservice.createlocation(le);
+    }
+    @GetMapping("/showlocation")
+    
 }
