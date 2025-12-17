@@ -1,8 +1,10 @@
 package com.example.demo.entity;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+
 @Entity
 public class LocationEntity {
     @Id
@@ -35,13 +37,13 @@ public class LocationEntity {
     public void setLongitude(Double longitude) {
         this.longitude = longitude;
     }
+    public LocationEntity() {
+    }
     public LocationEntity(Long id, String name, Double latitude, Double longitude) {
         this.id = id;
         this.name = name;
         this.latitude = latitude;
         this.longitude = longitude;
     }
-    public LocationEntity() {
-    }
-    
+
 }
