@@ -6,6 +6,6 @@ public class LocationServiceImpl implements LocationService {
     @Override
     public LocationEntity createlocation(LocationEntity le) {
         return Locationrepo.save(le);
-        
+        T
     }
 }
